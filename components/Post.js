@@ -28,7 +28,7 @@ function Post({ name, image, postImage, message, email, timestamp }) {
 			</div>
 			{postImage && (
 				<div className='relative h-56 md:h-96 bg-white'>
-					<Image src={postImage} objectFit='cover' layout='fill' />
+					<Image src={postImage} objectFit='cover' layout='fill' alt='' />
 				</div>
 			)}
 			<div className='flex justify-between items-center rounded-b-2xl bg-white shadow-md text-gray-400 border-t'>

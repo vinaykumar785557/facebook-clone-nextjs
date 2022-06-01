@@ -16,6 +16,7 @@ import {
 	HomeIcon,
 	UserGroupIcon,
 	ViewGridIcon,
+	UserIcon,
 } from '@heroicons/react/solid';
 function Header() {
 	const [session] = useSession();
@@ -29,6 +30,7 @@ function Header() {
 					width={40}
 					height={40}
 					layout='fixed'
+					alt=''
 				/>
 
 				<div className='md:inline-flex flex ml-2 items-center rounded-full bg-gray-100 p-2'>
@@ -64,6 +66,7 @@ function Header() {
 						width={40}
 						height={40}
 						layout='fixed'
+						alt=''
 					/>
 				) : (
 					<UserIcon className='icon' onClick={signOut} />
